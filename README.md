@@ -5,7 +5,5 @@
 ### 2- in this .test file we create each test function  with test or it key word like test("your test name",callback function) 
  
 
-## run test with this command
-
-## `npm  run test`
+## run test with this command : `npm  run test`
 
