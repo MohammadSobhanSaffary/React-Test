@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # Let's Learn React Testing
 
 ## Test File Structure
@@ -13,7 +13,7 @@
 test("Your test name", () => {
   // Test code goes here
 });
-```
+
 
 ## Test Setup
 
