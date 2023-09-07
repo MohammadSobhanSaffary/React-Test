@@ -1,15 +1,18 @@
-import React from "react";
-import UserForm from "./components/UserForm";
-import UserList from "./components/UserList";
+import { useState } from 'react';
+import UserForm from './UserForm';
+import UserList from './UserList';
 
 function App() {
-  const [users, setUsers] = React.useState([]);
-  const addUser = (input) => {
-    setUsers((prev) => [...prev, input]);
+  const [users, setUsers] = useState([]);
+
+  const onUserAdd = (user) => {
+    setUsers([...users, user]);
   };
+
   return (
-    <div className="App">
-      <UserForm setUsers={addUser} />
+    <div>
+      <UserForm onUserAdd={onUserAdd} />
+      <hr />
       <UserList users={users} />
     </div>
   );
