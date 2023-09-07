@@ -1,13 +1,47 @@
-# Lets Learning React Test 
 
-### 1- foreach component u want to write test first you have to make file with  componentName.test.js
 
-### 2- in this .test file we create each test function  with test or it key word like test("your test name",callback function) 
- 
-### 3-in test course   care about libraries version it can cause some streng bugs
-### 4- the callback function strat with render method like this 
-```               render(<App/>)         ```
-### 5- the seccond part of each test function is Manipulate the component or find an element in it , these are possible with some query methods some things look what we have in real dom with diffrent syntax 
-```    \n    const element=screen.getBy...();           \n ```
-## run tests with this command : `npm run test`
+```markdown
+# Let's Learn React Testing
 
+## Test File Structure
+
+1. For each component, create a separate test file with the naming convention `componentName.test.js`.
+
+2. Inside the test file, write test functions using the `test` or `it` keyword. Each function should have a descriptive name and a callback function containing the tests.
+
+```javascript
+test("Your test name", () => {
+  // Test code goes here
+});
+```
+
+## Test Setup
+
+1. Ensure compatibility with library versions to avoid any unexpected issues.
+
+2. Start the callback function with the `render` method to render the component being tested.
+
+```javascript
+render(<App />);
+```
+
+## Performing Tests
+
+1. Within the test function, you can manipulate the component and find elements using query methods.
+
+```javascript
+import { render, screen } from "@testing-library/react";
+
+test("Example test", () => {
+  render(<App />);
+  const element = screen.getByText("Example"); // Example of finding an element
+  // Perform assertions and expectations
+});
+```
+
+## Running Tests
+
+To run the tests, use the following command:
+```
+npm run test
+```
