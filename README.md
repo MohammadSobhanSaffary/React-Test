@@ -21,7 +21,7 @@ test("Your test name", () => {
 
  
  
- 2. Start the callback function with the  **`render`**  method to render the component being tested.
+2. Start the callback function with the  **`render`**  method to render the component being tested.
 
   ```javascript
    test("Your test name", () => {
@@ -66,11 +66,10 @@ test("Your test name", () => {
    ```
  
 
-
-4. Handle `User Events` (Optional)
+ 4. Handle `User Events` (Optional)
 
  
-5.Expections
+ 5.Expections
 
 
 
