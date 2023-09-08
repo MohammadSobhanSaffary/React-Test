@@ -42,7 +42,7 @@ test("Your test name", () => {
    Using `container query selector` :
 
   
-  This solution involves destructuring the container from the render method and using container query selectors. You can inspect the rendered DOM using screen.logTestingPlaygroundURL() to find an appropriate query. 
+  This solution involves destructuring the container from the render method and using container query selectors. You can inspect the rendered DOM using screen. `logTestingPlaygroundURL()` to find an appropriate query. 
     Here's an example:
 
    ```javascript
