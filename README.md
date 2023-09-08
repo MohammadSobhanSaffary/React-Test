@@ -55,12 +55,13 @@ test("Your test name", () => {
  
    Using `within` and `data-testid`:
        In your JSX code, add a `data-testid` attribute to the table body element, such as `data-testid="users"`. Then, in your test function, retrieve the table body rows using the following code:
-      ```jsx
-   
- <tbody data-testid="users">
-      ```
+      
+  ```jsx
+      <tbody data-testid="users">
+  ```
 
-   ```javascript
+
+  ```javascript
    const rows = within(screen.getByTestId("users")).getAllByRole("row");
    ```
  
