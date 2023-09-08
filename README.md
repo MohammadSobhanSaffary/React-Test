@@ -13,17 +13,51 @@
 test("Your test name", () => {
   // Test code goes here
 });
-
+```
 
 ## Test Setup
 
-1. Ensure compatibility with library versions to avoid any unexpected issues.
+ 1. `Ensure compatibility with library versions to avoid any unexpected issues`.
 
 2. Start the callback function with the `render` method to render the component being tested.
 
 ```javascript
-render(<App />);
+test("Your test name", () => {
+  // Test code goes here
+    // render the target component
+
+        render(<App />);
+
+});
 ```
+ 3.Next step is ` query and find element (elements) ` we want to use test on them  To query and select a DOM element, there are two popular ways to do it using screen methods like getByRole, getByText, getByDisplayValue, and more. However, in the case of a table where you want to test the length of the table body rows to have a specific length, such as 2, it becomes a bit tricky. This is because the length will always include the table header rows, and it's not possible to differentiate between tr elements in the thead and tbody
+
+  solution 1:  Using container query:
+
+This solution involves destructuring the container from the render method and using container query selectors. You can inspect the rendered DOM using screen.logTestingPlaygroundURL() to find an appropriate query. Here's an example:
+
+```javascript
+const container = screen.container;
+const firstRowCell = container.querySelector('#sandbox > div > table > tbody');
+```
+
+  solution 2:  Using `within` and `data-testid`:
+
+   In your JSX code, add a `data-testid` attribute to the table body element, such as `data-testid="users"`. Then, in your test function, retrieve the table body rows using the following code:
+
+   ```jsx
+   
+     <tbody data-testid="users">
+   ```
+
+   ```javascript
+   const rows = within(screen.getByTestId("users")).getAllByRole("row");
+   ```
+
+4- `Handle User Events` (OPTIONAL PART)
+
+
+5- `Expection`
 
 ## Performing Tests
 
