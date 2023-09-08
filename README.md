@@ -34,7 +34,7 @@ test("Your test name", () => {
  ```
 
 
- 3. <p>Next step is  **`query`** and find element (elements)   we want to use test on them  To query and select a DOM element, there are two popular ways to do it using screen methods like getByRole, getByText, getByDisplayValue, and more. However, in the case of a table where you want to test the length of the table body rows to have a specific length, such as 2, it becomes a bit tricky. This is because the length will always include the table header rows, and it's not possible to differentiate between tr elements in the thead and tbody</p>
+ 3. ext step is  **`query`** and find element (elements)   we want to use test on them  To query and select a DOM element, there are two popular ways to do it using screen methods like getByRole, getByText, getByDisplayValue, and more. However, in the case of a table where you want to test the length of the table body rows to have a specific length, such as 2, it becomes a bit tricky. This is because the length will always include the table header rows, and it's not possible to differentiate between tr elements in the thead and tbody
 
 <h4>Solution 1</h4> 
 
