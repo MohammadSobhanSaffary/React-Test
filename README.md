@@ -72,21 +72,6 @@ test("Your test name", () => {
 
 
 
-
-## Performing Tests
-
-1. Within the test function, you can manipulate the component and find elements using query methods.
-
-```javascript
-import { render, screen } from "@testing-library/react";
-
-test("Example test", () => {
-  render(<App />);
-  const element = screen.getByText("Example"); // Example of finding an element
-  // Perform assertions and expectations
-});
-```
-
 ## Running Tests
 
 To run the tests, use the following command:
