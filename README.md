@@ -6,6 +6,8 @@
 
 
  **create a rtl-book file with this command**
+
 `javascript
 npx rtl-book serve any-file-name.js
 `
+<p>after that run that with the same command and go on the rtl-book port(localhost:4000 is default) and start create functions and test  have fun 😊💯✌</p>
